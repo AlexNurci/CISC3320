@@ -1,0 +1,20 @@
+Algorithm      Avg Waiting    Avg Turnaround   Avg Response   
+FCFS           6.40           10.60            6.40           
+SJF            4.60           8.80             4.60           
+Round Robin    7.80           12.00            4.60           
+Priority       5.20           9.40             5.20           
+MLFQ           8.40           12.60            4.40           
+
+Priority convention:
+Lower priority number = higher priority.
+Priority ties use earlier arrival, then input order.
+
+MLFQ rules:
+Queues: Q0 and Q1
+Q0 quantum: 4
+Q1 quantum: 8
+New processes enter Q0.
+Using a full Q0 quantum causes demotion to Q1.
+Using a full Q1 quantum causes requeueing in Q1.
+Same-queue order is FIFO.
+Aging: none.
